@@ -8,24 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		021E37AD22934B3B0045D1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37AC22934B3B0045D1CA /* AppDelegate.m */; };
-		021E37B022934B3B0045D1CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37AF22934B3B0045D1CA /* ViewController.m */; };
 		021E37B322934B3B0045D1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021E37B122934B3B0045D1CA /* Main.storyboard */; };
 		021E37B522934B3D0045D1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021E37B422934B3D0045D1CA /* Assets.xcassets */; };
 		021E37B822934B3D0045D1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021E37B622934B3D0045D1CA /* LaunchScreen.storyboard */; };
 		021E37BB22934B3D0045D1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37BA22934B3D0045D1CA /* main.m */; };
+		021E37C422934C250045D1CA /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37C322934C250045D1CA /* Entry.m */; };
+		021E37C822934EAE0045D1CA /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37C722934EAE0045D1CA /* EntryController.m */; };
+		021E37CC229351530045D1CA /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37CB229351530045D1CA /* EntryListTableViewController.m */; };
+		021E37D022935DE70045D1CA /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E37CF22935DE70045D1CA /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021E37A822934B3B0045D1CA /* JournalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		021E37AB22934B3B0045D1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		021E37AC22934B3B0045D1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		021E37AE22934B3B0045D1CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		021E37AF22934B3B0045D1CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		021E37B222934B3B0045D1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		021E37B422934B3D0045D1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021E37B722934B3D0045D1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021E37B922934B3D0045D1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021E37BA22934B3D0045D1CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		021E37C222934C250045D1CA /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		021E37C322934C250045D1CA /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		021E37C622934EAE0045D1CA /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		021E37C722934EAE0045D1CA /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		021E37CA229351530045D1CA /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		021E37CB229351530045D1CA /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		021E37CE22935DE70045D1CA /* EntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		021E37CF22935DE70045D1CA /* EntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +67,55 @@
 		021E37AA22934B3B0045D1CA /* JournalC */ = {
 			isa = PBXGroup;
 			children = (
+				021E37B122934B3B0045D1CA /* Main.storyboard */,
+				021E37CD22935DCE0045D1CA /* ViewController */,
+				021E37C922934EC90045D1CA /* ModelController */,
+				021E37C522934E980045D1CA /* Model */,
+				021E37C122934BB90045D1CA /* Resources */,
+			);
+			path = JournalC;
+			sourceTree = "<group>";
+		};
+		021E37C122934BB90045D1CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				021E37AB22934B3B0045D1CA /* AppDelegate.h */,
 				021E37AC22934B3B0045D1CA /* AppDelegate.m */,
-				021E37AE22934B3B0045D1CA /* ViewController.h */,
-				021E37AF22934B3B0045D1CA /* ViewController.m */,
-				021E37B122934B3B0045D1CA /* Main.storyboard */,
 				021E37B422934B3D0045D1CA /* Assets.xcassets */,
 				021E37B622934B3D0045D1CA /* LaunchScreen.storyboard */,
 				021E37B922934B3D0045D1CA /* Info.plist */,
 				021E37BA22934B3D0045D1CA /* main.m */,
 			);
-			path = JournalC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		021E37C522934E980045D1CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				021E37C222934C250045D1CA /* Entry.h */,
+				021E37C322934C250045D1CA /* Entry.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		021E37C922934EC90045D1CA /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				021E37C622934EAE0045D1CA /* EntryController.h */,
+				021E37C722934EAE0045D1CA /* EntryController.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		021E37CD22935DCE0045D1CA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				021E37CA229351530045D1CA /* EntryListTableViewController.h */,
+				021E37CB229351530045D1CA /* EntryListTableViewController.m */,
+				021E37CE22935DE70045D1CA /* EntryDetailViewController.h */,
+				021E37CF22935DE70045D1CA /* EntryDetailViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021E37B022934B3B0045D1CA /* ViewController.m in Sources */,
+				021E37D022935DE70045D1CA /* EntryDetailViewController.m in Sources */,
+				021E37C422934C250045D1CA /* Entry.m in Sources */,
 				021E37BB22934B3D0045D1CA /* main.m in Sources */,
+				021E37C822934EAE0045D1CA /* EntryController.m in Sources */,
 				021E37AD22934B3B0045D1CA /* AppDelegate.m in Sources */,
+				021E37CC229351530045D1CA /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
